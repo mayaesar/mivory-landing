@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply min-h-dvh h-full;
+}
+
+body {
+    @apply min-h-dvh h-full flex flex-col text-gray-900 bg-pink-50;
+}
