@@ -9,5 +9,8 @@
       <Hero />
     </div>
     <HowTo />
+    <div class="h-dvh flex flex-col items-center justify-between">
+      <AboutUs />
+    </div>
   </NuxtLayout>
 </template>
