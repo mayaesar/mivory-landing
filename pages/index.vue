@@ -5,6 +5,7 @@
 <template>
   <NuxtLayout>
     <div class="md:h-dvh flex flex-col gap-3 py-3">
+      <NavBar />
       <Hero />
     </div>
 
