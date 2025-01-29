@@ -8,6 +8,6 @@
       <NavBar />
       <Hero />
     </div>
-
+    <HowTo />
   </NuxtLayout>
 </template>
