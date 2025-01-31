@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="flex flex-col w-full items-center gap-6 mb-10 pt-6 border-t border-gray-700">
+  <footer class="flex flex-col w-full items-center gap-6 pt-6 border-t border-gray-700">
     <div class="flex flex-col md:flex-row w-full items-center justify-between mb-6 gap-6">
       <div class="flex items-center gap-6">
         <div class="hidden md:flex items-center">
@@ -19,7 +19,7 @@
       </a>
     </div>
 
-    <p class="text-xs text-gray-700">©2025 Mivory. All rights reserved.</p>
+    <p class="text-xs text-gray-700 mb-10">©2025 Mivory. All rights reserved.</p>
 
   </footer>
 </template>
