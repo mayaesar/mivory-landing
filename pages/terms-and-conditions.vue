@@ -3,6 +3,7 @@ const name = 'Mivory'
 </script>
 
 <template>
+  <NuxtLayout>
   <section class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto px-3">
   <NavBar />
   <div class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto px-3 py-6">
@@ -61,4 +62,5 @@ const name = 'Mivory'
   </div>
   <Footer />
   </section>
+  </NuxtLayout>
 </template>
