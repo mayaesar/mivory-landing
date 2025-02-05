@@ -4,9 +4,7 @@
 
 <template>
   <section id="hero" class="flex-1 flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24">
-    <div class="relative w-full md:max-w-[280px] aspect-[9/16] shrink-0">
-      <LazyNuxtImg src="/phoneMock.svg" alt="phone frame" />
-    </div>
+    <VideoDisplay videoUrl="/videoTest.MP4" />
     <div>
       <h1 class="text-5xl md:text-7xl font-bold mb-6">Save, Organize, <br/> Collaborate</h1>
       <p class="text-gray-700 text-lg">

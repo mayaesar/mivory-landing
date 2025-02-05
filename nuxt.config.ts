@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     id: 'G-VNNV6QT9NM'
   },
   colorMode: {
-    preference: "light"
-  }
+    preference: "light",
+  },
+  ssr: false
 })
