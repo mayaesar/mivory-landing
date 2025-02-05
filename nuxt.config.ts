@@ -7,5 +7,8 @@ export default defineNuxtConfig({
   gtag: {
     enabled: process.env.NODE_ENV === 'production',
     id: 'G-VNNV6QT9NM'
+  },
+  colorMode: {
+    preference: "light"
   }
 })

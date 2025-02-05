@@ -20,6 +20,6 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="w-full fixed top-0 z-20">
-    <div class="bg-pink-600 h-4 z-20" :style="{ width: scrollPosition + '%' }"></div>
+    <div class="bg-rose-600 h-4 z-20" :style="{ width: scrollPosition + '%' }"></div>
   </div>
 </template>

@@ -1,21 +1,39 @@
 <script setup lang="ts">
+const isLoading = ref(false);
 
+const sendEmail = async (event: Event) => {
+  try {
+    isLoading.value = true;
+
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    await $fetch("/api/emails", {
+      method: "POST",
+      body: {
+        email: formData.get("email"),
+      },
+    });
+
+    form.reset();
+  } catch (error) {
+    console.error(error);
+  } finally {
+    isLoading.value = false;
+  }
+}
 </script>
 
 <template>
   <div>
-    <form>
+    <form @submit.prevent="sendEmail">
       <div class="flex items-center gap-4 md:mr-6">
-        <input type="email"
-               name="email"
-               placeholder="example@email.com"
-               class="bg-gray-400 bg-opacity-10 flex-1 rounded-md px-4 py-2 text-gray-700 focus:outline-pink-600"
-        />
 
-        <button type="submit"
-                class="bg-pink-600 text-white rounded-md px-4 py-2 shrink-0 hover:bg-pink-700">Early
-          Access
-        </button>
+        <UInput :disabled="isLoading" color="white" variant="outline" type="email" name="email" placeholder="example@email.com" size="xl" class="flex-1" :ui="{ base: '!bg-gray-50' }" />
+
+        <UButton :loading="isLoading" size="xl" type="submit">
+          Early Access
+        </UButton>
       </div>
     </form>
   </div>

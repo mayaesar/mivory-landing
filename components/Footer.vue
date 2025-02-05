@@ -8,14 +8,16 @@
       <div class="flex items-center gap-6">
         <div class="hidden md:flex items-center">
           <img src="/mivory-icon-no-bg.svg" alt="logo of a bookmark" class="size-8"/>
-          <h1 class="text-pink-950 font-semibold"><a href="#">MIVORY</a></h1>
+          <h1 class="text-rose-700 font-semibold ml-1"><a href="#">MIVORY</a></h1>
         </div>
         <a class="text-sm md:text-lg" href="/terms-and-conditions">Terms & Conditions </a>
         <a class="text-sm md:text-lg" href="/privacy-policy">Privacy Policy </a>
       </div>
 
-      <a href="#hero" class="bg-pink-600 text-white rounded-md px-4 py-2 shrink-0 hover:bg-pink-700">
-        Early Access
+      <a href="#hero">
+        <UButton size="xl">
+          Early Access
+        </UButton>
       </a>
     </div>
 
