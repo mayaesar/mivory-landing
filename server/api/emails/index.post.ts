@@ -3,7 +3,16 @@ import { Resend } from 'resend';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default defineEventHandler(async (event) => {
-    const { email } = await readBody(event);
+    const { email, captcha } = await readBody(event);
+
+    const response = await verifyTurnstileToken(captcha);
+
+    if (!response.success) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: 'Invalid captcha',
+        });
+    }
 
     if (!email) {
         throw createError({
