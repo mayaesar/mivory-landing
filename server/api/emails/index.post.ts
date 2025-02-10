@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import {earlyAccessHTML} from "~/templates/early-access";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -25,9 +26,7 @@ export default defineEventHandler(async (event) => {
         from: 'Mivory <welcome@mivory.app>',
         to: email,
         subject: 'Welcome to Mivory!',
-        html: `
-            <p>Thank you</p>
-        `,
+        html: earlyAccessHTML,
         headers: {
             'List-Unsubscribe': '<https://example.com/unsubscribe>',
         },
