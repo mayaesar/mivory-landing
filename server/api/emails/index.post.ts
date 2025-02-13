@@ -22,20 +22,30 @@ export default defineEventHandler(async (event) => {
         });
     }
 
-    const { error } = await resend.emails.send({
+    const { error: sendEmailError } = await resend.emails.send({
         from: 'Mivory <welcome@mivory.app>',
         to: email,
         subject: 'Welcome to Mivory!',
         html: earlyAccessHTML,
-        headers: {
-            'List-Unsubscribe': '<https://example.com/unsubscribe>',
-        },
     });
 
-    if (error) {
+    if (sendEmailError) {
         throw createError({
             statusCode: 500,
-            statusMessage: 'Something went wrong',
+            statusMessage: sendEmailError.message,
+        });
+    }
+
+    const { error: createContactError } = await resend.contacts.create({
+        email: email,
+        unsubscribed: false,
+        audienceId: process.env.RESEND_AUDIENCE_ID!,
+    });
+
+    if (createContactError) {
+        throw createError({
+            statusCode: 500,
+            statusMessage: createContactError.message,
         });
     }
 
