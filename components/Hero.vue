@@ -4,7 +4,18 @@
 
 <template>
   <section id="hero" class="flex-1 flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24">
-    <VideoDisplay videoUrl="/videoTest.MP4" />
+
+    <div id="holder" class="relative w-full p-4 md:p-0 md:max-w-[280px] aspect-[9/19] shrink-0 overflow-hidden rounded-[2.5rem] border-4 border-gray-900 pointer-events-none">
+      <video
+          src='/mivoryMain.mov'
+          :controls="false"
+          autoPlay
+          playsinline
+          loop
+          muted
+          class="absolute top-0 left-0 w-full h-full z-0 object-cover overflow-hidden"
+      />
+    </div>
     <div>
       <h1 class="text-5xl md:text-7xl font-bold mb-6">Save, Organize, <br/> Collaborate</h1>
       <p class="text-gray-700 text-lg">
