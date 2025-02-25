@@ -13,12 +13,7 @@
         <a class="text-sm md:text-lg" href="/terms-and-conditions">Terms & Conditions </a>
         <a class="text-sm md:text-lg" href="/privacy-policy">Privacy Policy </a>
       </div>
-
-      <a href="#hero">
-        <UButton size="xl">
-          Early Access
-        </UButton>
-      </a>
+      <JoinDiscord />
     </div>
 
     <p class="text-xs text-gray-700 mb-10">©2025 Mivory. All rights reserved.</p>

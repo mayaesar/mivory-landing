@@ -1,25 +1,25 @@
 type Position = {
-    x: number;
-    y: number;
-}
+  x: number;
+  y: number;
+};
 
 export const useMousePosition = () => {
-    const position = ref<Position | null>(null);
+  const position = ref<Position | null>(null);
 
-    const onMouseMove = (e: MouseEvent) => {
-        position.value = {
-            x: e.pageX,
-            y: e.pageY
-        };
+  const onMouseMove = (e: MouseEvent) => {
+    position.value = {
+      x: e.pageX,
+      y: e.pageY,
     };
+  };
 
-    onMounted(() => {
-        window.addEventListener('mousemove', onMouseMove);
-    });
+  onMounted(() => {
+    window.addEventListener("mousemove", onMouseMove);
+  });
 
-    onBeforeUnmount(() => {
-        window.removeEventListener('mousemove', onMouseMove);
-    });
+  onBeforeUnmount(() => {
+    window.removeEventListener("mousemove", onMouseMove);
+  });
 
-    return position;
-}
+  return position;
+};
