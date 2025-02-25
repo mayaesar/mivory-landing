@@ -18,5 +18,8 @@
     "resend": "^4.1.2",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.1"
   }
 }
