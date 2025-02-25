@@ -7,7 +7,7 @@
 
     <div id="holder" class="relative w-full p-4 md:p-0 md:max-w-[280px] aspect-[9/19] shrink-0 overflow-hidden rounded-[2.5rem] border-4 border-gray-900 pointer-events-none">
       <video
-          src='/mivoryMain.mov'
+          src='/mivoryMain.mp4'
           :controls="false"
           autoPlay
           playsinline
