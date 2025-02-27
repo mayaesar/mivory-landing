@@ -13,7 +13,7 @@
       />
     </div>
     <div>
-      <h1 class="text-5xl md:text-7xl font-bold mb-6">Save, Organize, <br/> Collaborate</h1>
+      <h1 class="text-5xl md:text-7xl font-theme font-bold mb-6">Save, Organize, <br/> Collaborate</h1>
       <p class="text-gray-700 text-lg">
         <strong>Mivory </strong>
         let's you save content from anywhere, organize your ideas with custom bookshelves, and collaborate effortlessly with friends.

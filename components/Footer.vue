@@ -8,7 +8,7 @@
       <div class="flex items-center gap-6">
         <div class="hidden md:flex items-center">
           <img src="/mivory-icon-no-bg.svg" alt="logo of a bookmark" class="size-8"/>
-          <h1 class="text-rose-700 font-semibold ml-1"><a href="#">MIVORY</a></h1>
+          <h1 class="text-rose-700 font-theme font-bold ml-1"><a href="#">MIVORY</a></h1>
         </div>
         <a class="text-sm md:text-lg" href="/terms-and-conditions">Terms & Conditions </a>
         <a class="text-sm md:text-lg" href="/privacy-policy">Privacy Policy </a>

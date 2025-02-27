@@ -8,7 +8,7 @@
     <div class="md:h-dvh flex flex-col md:flex-row items-center justify-center py-12 md:py-0 gap-12 md:gap-24 mb-12 md:mb-0">
       <div>
         <h1 class="text-4xl md:text-6xl font-theme font-bold mb-6">
-          <span class="text-rose-600">Save</span> Everything, Effortlessly
+          <span class="text-rose-600 ">Save</span> Everything, Effortlessly
         </h1>
         <p class="text-gray-700 md:text-lg">
           Instantly save links, articles, and media from anywhere online. With easy-to-use tools at your fingertips, capturing content on the go has never been simpler.

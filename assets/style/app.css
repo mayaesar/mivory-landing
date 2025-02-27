@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 body {
     @apply min-h-dvh flex flex-col text-gray-900 bg-pink-50;
@@ -8,4 +11,8 @@ body {
 
 #__nuxt {
     @apply flex-1 flex flex-col;
+}
+
+.font-theme {
+    font-family: 'Rubik', sans-serif;
 }
