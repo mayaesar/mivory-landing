@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/image', 'nuxt-gtag', '@nuxtjs/turnstile'],
+  modules: ['@nuxt/ui', '@nuxt/image', 'nuxt-gtag', '@nuxtjs/turnstile', '@nuxtjs/sitemap'],
   app: {
     head: {
       title: 'Mivory - My second memory',
@@ -15,6 +15,12 @@ export default defineNuxtConfig({
         { name: 'og:url', content: 'https://mivory.app' },
       ]
     }
+  },
+  site: {
+    name: 'Mivory',
+    description: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
+    url: 'https://mivory.app',
+    image: 'https://mivory.app/metaImg.png',
   },
   runtimeConfig: {
     turnstile: {
