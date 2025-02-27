@@ -1,19 +1,15 @@
-<script setup lang="ts">
+  <script setup lang="ts">
 
-</script>
+  </script>
 
 <template>
   <section id="hero" class="flex-1 flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-24">
 
-    <div id="holder" class="relative w-full p-4 md:p-0 md:max-w-[280px] aspect-[9/19] shrink-0 overflow-hidden rounded-[2.5rem] border-4 border-gray-900 pointer-events-none">
-      <video
-          src='/mivoryMain.mov'
-          :controls="false"
-          autoPlay
-          playsinline
-          loop
-          muted
-          class="absolute top-0 left-0 w-full h-full z-0 object-cover overflow-hidden"
+    <div class="relative w-full md:max-w-[280px] aspect-[480/1000] shrink-0 overflow-hidden rounded-[2.5rem] ring-4 ring-gray-900 pointer-events-none">
+      <iframe
+          src="https://www.youtube.com/embed/SsuwCLjf004?si=QdKiQT66fyxkmY7U&autoplay=1&mute=1&controls=0&loop=1&playsinline=1&playlist=SsuwCLjf004"
+          allow="autoplay"
+          class="absolute top-0 left-0 w-full h-full z-0 object-cover border-none overflow-hidden"
       />
     </div>
     <div>

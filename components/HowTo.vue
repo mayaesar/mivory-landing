@@ -14,12 +14,12 @@
           Instantly save links, articles, and media from anywhere online. With easy-to-use tools at your fingertips, capturing content on the go has never been simpler.
         </p>
       </div>
-      <VideoDisplay videoUrl="/saveVideo.mov" />
+      <VideoDisplay videoID="M61WQjBgUlI" sig="ohJXZDSQJxi6tZwI" />
     </div>
 
 
     <div class="md:h-dvh flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-24 mb-12 md:mb-0">
-      <VideoDisplay videoUrl="/organizeVideo.mov" />
+      <VideoDisplay videoID="U7NkdIhN6Qs" sig="XOm1dlElgtt_pkbt" />
       <div>
         <h1 class="text-4xl md:text-6xl font-theme font-bold mb-6">
           <span class="text-rose-600">Organize</span> Your World
@@ -40,7 +40,7 @@
           Share your collections with friends, family, or colleagues. Work together, exchange ideas, and discover new content as a team. Collaboration has never been so simple and inspiring.
         </p>
       </div>
-      <VideoDisplay videoUrl="/collabVideo.mov" />
+      <VideoDisplay videoID="qdwcPJQlgK8" sig="v-xM0SOsQpw14TGW" />
     </div>
   </section>
 </template>

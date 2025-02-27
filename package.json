@@ -7,7 +7,8 @@
     "dev": "nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "npx nuxi build --preset=cloudflare_pages && npx wrangler pages deploy dist/ --project-name=mivory-landing"
   },
   "dependencies": {
     "@nuxt/image": "^1.9.0",

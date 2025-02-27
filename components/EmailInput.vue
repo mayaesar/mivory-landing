@@ -2,6 +2,7 @@
 const isLoading = ref(false);
 const token = ref("")
 const turnstile = ref<Turnstile.Turnstile | null>(null);
+const isOpen = ref(false);
 
 const sendEmail = async (event: Event) => {
   try {
@@ -12,7 +13,6 @@ const sendEmail = async (event: Event) => {
     const email = formData.get("email");
 
     if (!token.value) {
-      // TODO: Show please complete captcha
       return;
     }
 
@@ -26,6 +26,7 @@ const sendEmail = async (event: Event) => {
 
     form.reset();
     turnstile.value?.reset();
+    isOpen.value = true;
   } catch (error) {
     console.error(error);
   } finally {
@@ -47,8 +48,10 @@ watch(token, (v) => {
         <UButton :loading="isLoading" size="xl" type="submit">
           Early Access
         </UButton>
+
       </div>
       <NuxtTurnstile ref="turnstile" v-model="token" :options="{theme: 'light'}" />
     </form>
   </div>
+  <EarlyAccessModal v-model="isOpen" />
 </template>
