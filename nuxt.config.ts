@@ -3,6 +3,19 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
   modules: ['@nuxt/ui', '@nuxt/image', 'nuxt-gtag', '@nuxtjs/turnstile'],
+  app: {
+    head: {
+      title: 'Mivory - My second memory',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'og:title', content: 'Mivory - My second memory' },
+        { name: 'description', content: 'Mivory is a bookmarking manager that helps you save and organize your favourite links' },
+        { name: 'og:description', content: 'Mivory is a bookmarking manager that helps you save and organize your favourite links'},
+        { name: 'og:image', content: 'https://mivory.app/metaImg.png' },
+        { name: 'og:url', content: 'https://mivory.app' },
+      ]
+    }
+  },
   runtimeConfig: {
     turnstile: {
       secretKey: process.env.TURNSTILE_SECRET_KEY || '',
