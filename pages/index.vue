@@ -6,7 +6,7 @@ useSeoMeta({
   description: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
   ogTitle: 'Mivory',
   ogDescription: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
-  ogImage: 'metaImg.png',
+  ogImage: 'https://mivory.app/meta_img.png',
   ogUrl: 'https://mivory.app',
 })
 
