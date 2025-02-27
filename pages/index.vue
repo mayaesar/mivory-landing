@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import { useMousePosition } from "~/composables/useMousePosition";
 
+useSeoMeta({
+  title: 'Mivory - My second memory',
+  description: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
+  ogTitle: 'Mivory',
+  ogDescription: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
+  ogImage: 'metaImg.png',
+  ogUrl: 'https://mivory.app',
+})
+
 const mousePosition = useMousePosition();
 
 onMounted(() => {
