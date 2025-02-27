@@ -8,7 +8,7 @@ useSeoMeta({
   ogDescription: 'Mivory is a bookmarking manager that helps you save and organize your favourite links',
   ogImage: 'https://mivory.app/meta_img.png',
   ogUrl: 'https://mivory.app',
-});
+})
 
 const mousePosition = useMousePosition();
 
