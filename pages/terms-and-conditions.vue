@@ -1,66 +1,129 @@
 <script setup lang="ts">
+import BasicNav from "~/components/BasicNav.vue";
+
 const name = 'Mivory'
 </script>
 
 <template>
   <NuxtLayout>
   <section class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto px-3">
-  <NavBar />
-  <div class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto px-3 py-6">
-    <h1 class="text-center text-5xl font-bold mb-12 ">Terms and Conditions</h1>
+    <BasicNav />
+    <div class="flex-1 flex flex-col max-w-screen-lg w-full mx-auto px-4 py-8">
+      <h1 class="text-center text-5xl font-bold mb-10">Terms and Conditions</h1>
 
-    <p class="font-semibold mb-6">Your use of the Services is conditional on your acceptance of these Terms. By using or continuing to use the Services, you agree to be bound by these Terms. If you do not agree to all these Terms, then do not use the Services.</p>
-    <div class="flex flex-col gap-4">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">1. Acceptance of Terms</h2>
-      <p class="mb-4">By accessing or using {{name}}, you agree to be bound by these Terms and Conditions and our Privacy Policy. If you do not agree, please do not use our application.</p>
+      <p class="text-lg font-medium mb-6">
+        By using {{name}}, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not accept these Terms, you must discontinue use immediately.
+      </p>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">2. Use of the Application</h2>
-      <p class="mb-4">You agree to use {{name}} only for lawful purposes and in accordance with these Terms. You must not:</p>
-      <ul class="list-disc list-inside mb-4">
-        <li>Use the app in any way that violates applicable local, state, national, or international law.</li>
-        <li>Upload or share content that is illegal, harmful, or infringes on the rights of others.</li>
-        <li>Attempt to gain unauthorized access to the app or its systems.</li>
-      </ul>
+      <div class="space-y-8">
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">3. Account Responsibilities</h2>
-      <p class="mb-4">You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">1. Acceptance of Terms</h2>
+          <p class="mt-2">
+            By accessing or using <strong>{{name}}</strong>, you agree to comply with these Terms and our
+            <a href="/privacy-policy" class="text-blue-500 hover:underline">Privacy Policy</a>. If you do not agree, do not use the app.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">4. Content Ownership</h2>
-      <p class="mb-4">All content you save or bookmark remains your property. By using the app, you grant us a non-exclusive, worldwide license to store and display your content for the purpose of providing the service.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">2. Permitted Use</h2>
+          <p class="mt-2">You agree to use {{name}} only for lawful purposes and in accordance with these Terms. You must not:</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>Violate any federal, provincial, or international laws.</li>
+            <li>Upload, share, or store content that is illegal, harmful, or infringes upon the rights of others.</li>
+            <li>Interfere with, disrupt, or attempt to gain unauthorized access to the app’s security, systems, or data.</li>
+          </ul>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">5. Limitation of Liability</h2>
-      <p class="mb-4">{{name}} is provided &#34;as is&#34; and &#34;as available.&#34; We make no warranties of any kind regarding the app&#39;s performance or reliability. We will not be liable for any loss or damage arising from your use of the app.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">3. Account Responsibilities</h2>
+          <p class="mt-2">
+            To use {{name}}, you must create an account with a valid email and username. You are responsible for safeguarding your account credentials and all activity occurring under your account.
+          </p>
+          <p class="mt-2">
+            If you suspect unauthorized access, notify us immediately at
+            <a href="mailto:support@mivory.app" class="text-blue-500 hover:underline">support@mivory.app</a>. We are not responsible for any losses resulting from compromised accounts.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">6. Termination</h2>
-      <p class="mb-4">We reserve the right to suspend or terminate your access to {{name}} if you violate these Terms or engage in any harmful or illegal activity.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">4. Prohibited Content</h2>
+          <p class="mt-2">You may not store, share, or distribute content that includes:</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>Sexually explicit, pornographic, or adult content.</li>
+            <li>Hate speech, harassment, or content that promotes violence.</li>
+            <li>Illegal or fraudulent activities, including scams, piracy, or hacking tools.</li>
+          </ul>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">7. Changes to Terms</h2>
-      <p class="mb-4">We may update these Terms and Conditions from time to time. Changes will be effective upon posting, and it is your responsibility to review them periodically.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">5. Notes & User Content</h2>
+          <p class="mt-2">
+            Users may add personal notes to their saved bookmarks. By doing so, you grant us a limited, non-exclusive, royalty-free
+            license to store and display your notes within {{name}} to facilitate your bookmarking experience.
+          </p>
+          <p class="mt-2">
+            You are responsible for ensuring that your notes comply with these Terms, and we reserve the right to remove any content that
+            violates policies or applicable laws.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">8. Privacy Policy</h2>
-      <p class="mb-4">Your privacy is important to us. Please refer to our Privacy Policy for details on how we collect, use, and protect your information.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">6. Service Availability & Modifications</h2>
+          <p class="mt-2">
+            We strive to keep {{name}} available and running smoothly, but we do not guarantee uninterrupted service.
+            Access may be affected by maintenance, updates, or unforeseen technical issues.
+          </p>
+          <p class="mt-2">
+            We reserve the right to modify, suspend, or discontinue parts of the service at any time without prior notice.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">9. Intellectual Property</h2>
-      <p class="mb-4">All intellectual property rights related to the application, including trademarks, logos, and service marks, are owned by {{name}} or its licensors. You agree not to reproduce, distribute, or create derivative works without prior written consent.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">7. Account Termination</h2>
+          <p class="mt-2">
+            We may suspend or terminate your account if you violate these Terms, abuse the platform, or engage in illegal activity.
+          </p>
+          <p class="mt-2">
+            You may also request account deletion by contacting
+            <a href="mailto:support@mivory.app" class="text-blue-500 hover:underline">support@mivory.app</a>.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">10. Third-Party Services</h2>
-      <p class="mb-4">The application may include links to third-party websites or services. We are not responsible for the content or practices of these third parties and encourage you to review their terms and privacy policies.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">8. Disclaimer of Warranties & Limitation of Liability</h2>
+          <p class="mt-2">
+            {{name}} is provided "as is" and "as available," without warranties of any kind, express or implied.
+            We do not guarantee that the service will always be secure, error-free, or meet your expectations.
+          </p>
+          <p class="mt-2">
+            To the fullest extent permitted by law, we shall not be liable for any indirect, incidental, special, or consequential damages
+            arising from your use of {{name}}.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">11. Indemnification</h2>
-      <p class="mb-4">You agree to indemnify and hold harmless {{name}}, its affiliates, and employees from any claims, damages, or expenses arising from your use of the application or violation of these Terms.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">9. Governing Law</h2>
+          <p class="mt-2">
+            These Terms are governed by the laws of <strong>Canada and the province of Quebec</strong>. Any disputes will be resolved
+            exclusively in the courts of Quebec.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">12. Governing Law</h2>
-      <p class="mb-4">These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles.</p>
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-800">10. Contact Information</h2>
+          <p class="mt-2">
+            For any questions regarding these Terms, contact us at
+            <a href="mailto:support@mivory.app" class="text-blue-500 hover:underline">support@mivory.app</a>.
+          </p>
+        </section>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">13. Contact Us</h2>
-      <p class="mb-4">If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:couplewhocodes@gmail.com" class="text-blue-500 hover:underline">couplewhocodes@gmail.com</a>.</p>
+        <p class="text-sm text-gray-600 mt-8">Last updated: March 2025</p>
 
-
-      <p class="text-sm text-gray-600">Last updated: January 2025</p>
-
+      </div>
     </div>
-  </div>
-  <Footer />
+
+    <Footer />
   </section>
   </NuxtLayout>
 </template>

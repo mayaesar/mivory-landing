@@ -1,9 +1,14 @@
 <script setup lang="ts">
-  const props = defineProps(["isOpen"]);
+  const isOpen = defineModel<boolean>({ required: true });
 </script>
 
 <template>
-  <UModal v-model="props.isOpen">
+  <UModal v-model="isOpen">
+    <UIcon
+        name="i-ph-x-bold"
+        class="text-gray-500 absolute top-4 right-4 cursor-pointer"
+        @click="() => isOpen = false"
+    />
     <div class="p-6 bg-white rounded-lg shadow-lg">
       <h2 class="text-2xl font-semibold text-gray-800 mb-4">You're In! 🎉</h2>
       <p class="text-gray-600 mb-4">Thanks for signing up for early access to Mivory!</p>
