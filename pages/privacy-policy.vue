@@ -25,7 +25,7 @@
         <li><strong>Personal Information:</strong> Email, username, and details provided during registration.</li>
         <li><strong>Usage Data:</strong> Interactions with the app, including saved bookmarks, collections, and visited pages.</li>
         <li><strong>Device Data:</strong> Operating system and device model.</li>
-        <li><strong>Cookies & Tracking Data:</strong> Analytics tools like PostHog (manage in settings).</li>
+        <li><strong>Cookies & Tracking Data:</strong> Analytics tools like PostHog.</li>
       </ul>
 
       <h2 class="text-2xl font-semibold text-gray-900 mb-4">2. How We Use Your Information</h2>
@@ -34,16 +34,15 @@
         <li>To personalize your experience and enhance functionality.</li>
         <li>To send updates, notifications, and security alerts.</li>
         <li>To comply with legal and regulatory obligations.</li>
-        <li>For targeted advertising (only with your explicit consent).</li>
+
       </ul>
 
       <h2 class="text-2xl font-semibold text-gray-900 mb-4">3. Your Rights</h2>
-      <p class="text-gray-700 mb-6">You have the right to:</p>
+      <p class="text-gray-700 mb-2">You have the right to:</p>
       <ul class="list-disc list-inside text-gray-700 mb-6">
         <li>Access and review your personal data.</li>
         <li>Request corrections or deletions.</li>
-        <li>Withdraw consent for data collection and targeted ads.</li>
-        <li><strong>California Residents:</strong> Opt out of data sharing for advertising.</li>
+        <li>Withdraw consent for data collection</li>
       </ul>
 
       <h2 class="text-2xl font-semibold text-gray-900 mb-6">4. Data Storage and Security</h2>
@@ -73,7 +72,8 @@
 
       <h2 class="text-2xl font-semibold text-gray-900 mb-4">7. Cookies & Tracking</h2>
       <p class="text-gray-700 mb-6">
-        We use cookies for essential functions and analytics. You can manage preferences in your device settings.
+        We do not use any 3rd party cookies. We use cookies for authentication and fonctionality purposes. All data tracking is anonymized and aggrigated for analytics purposes only.
+
       </p>
 
       <h2 class="text-2xl font-semibold text-gray-900 mb-4">8. International Data Transfers</h2>
