@@ -2,7 +2,17 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/image', 'nuxt-gtag', '@nuxtjs/turnstile', '@nuxtjs/sitemap'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxt/image',
+    'nuxt-gtag',
+    '@nuxtjs/turnstile',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/i18n',
+  ],
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
   runtimeConfig: {
     turnstile: {
       secretKey: process.env.TURNSTILE_SECRET_KEY || '',
