@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import BasicNav from "~/components/BasicNav.vue";
 
-const name = 'Mivory'
 
 const { t } = useI18n({
   messages: {
@@ -133,12 +132,12 @@ const { t } = useI18n({
           contact: "Pour exercer ces droits, contactez-nous à "
         },
         updates: {
-          title: "10. Updates to These Terms",
-          content: "We may update these Terms periodically. Changes will be communicated via in-app notifications or email."
+          title: "10. Mises à jour de ces conditions",
+          content: "Nous pouvons mettre à jour ces conditions périodiquement. Les changements seront communiqués via des notifications dans l'application ou par e-mail."
         },
         contact_info: {
-          title: "11. Contact Information",
-          content: "For any questions regarding these Terms, contact us at"
+          title: "11. Informations de contact",
+          content: "Pour toute question concernant ces conditions, contactez-nous à"
         },
       },
       last_updated: "Dernière mise à jour : Mars 2025"
