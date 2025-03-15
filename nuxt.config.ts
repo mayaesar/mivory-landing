@@ -2,14 +2,8 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: false },
-  modules: [
-    '@nuxt/ui',
-    '@nuxt/image',
-    'nuxt-gtag',
-    '@nuxtjs/turnstile',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/i18n',
-  ],
+  modules: ['@nuxt/ui', '@nuxt/image', 'nuxt-gtag', // '@nuxtjs/sitemap',
+  '@nuxtjs/turnstile', '@nuxtjs/i18n'],
   i18n: {
     vueI18n: './i18n.config.ts'
   },
