@@ -12,9 +12,6 @@ useSeoMeta({
 <template>
   <PageProgress />
   <main class="relative flex-1 flex flex-col max-w-screen-lg mx-auto px-3 py-4">
-    <div class="absolute top-4 right-8">
-      <LanguageSwitch />
-    </div>
     <slot />
   </main>
 </template>

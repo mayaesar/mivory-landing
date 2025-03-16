@@ -10,9 +10,8 @@ const mainPage = () => {
       <img src="/mivory-icon-no-bg.svg" alt="mivory icon: smart elephant" class="size-16"/>
       <h1 class="hidden md:block text-rose-700 font-theme font-bold"><a href="#">MIVORY</a></h1>
     </div>
+    <div class="absolute top-4 right-8">
+      <LanguageSwitch />
+    </div>
   </nav>
 </template>
-
-<style scoped>
-
-</style>
