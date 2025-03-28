@@ -1,5 +1,8 @@
   <script setup lang="ts">
 
+  import AppleDownload from "~/components/AppleDownload.vue";
+
+  const isClicked = ref(false);
   </script>
 
 <template>
@@ -18,7 +21,7 @@
         <strong>Mivory </strong>
         let's you save content from anywhere, organize your ideas with custom bookshelves, and collaborate effortlessly with friends.
       </p>
-      <div class="flex items-center justify-between md:justify-start gap-2 md:gap-4 mt-12 mb-8">
+      <div class="flex items-center justify-between md:justify-start gap-2 md:gap-4 mt-12 mb-6">
         <UIcon name="ph-instagram-logo" class="size-8"/>
         <UIcon name="ph-google-logo" class="size-8"/>
         <UIcon name="ph-x-logo" class="size-8"/>
@@ -28,15 +31,18 @@
         <UIcon name="ph-youtube-logo" class="size-8"/>
         <UIcon name="ph-map-pin" class="size-8"/>
       </div>
-      <div class="flex flex-col justify-center md:block">
-        <EmailInput/>
-        <p class="mt-2 text-gray-500">
-          Be the
-          <span class="text-gray-900 font-semibold">first</span>
-          to know when we launch and get
-          <span class="text-gray-900 font-semibold">exclusive early access!</span>
-        </p>
+      <div class="flex flex-row justify-start items-start">
+        <AppleDownload />
+        <AndroidDownload
+        @click="isClicked = true"/>
       </div>
+      <div class="h-52">
+        <div v-if="isClicked" class="w-96 p-4">
+          <email-input />
+          <p class="text-sm text-gray-500">Note: Make sure use the email that is linked to your Play store, once sumbitted keep an eye on your inbox for the link to join. </p>
+        </div>
+      </div>
+
 
     </div>
   </section>

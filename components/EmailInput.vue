@@ -46,7 +46,7 @@ watch(token, (v) => {
         <UInput :disabled="isLoading" color="white" variant="outline" type="email" name="email" placeholder="example@email.com" size="xl" required class="flex-1" :ui="{ base: '!bg-gray-50' }" />
 
         <UButton :loading="isLoading" size="xl" type="submit">
-          Early Access
+          Join Android Beta
         </UButton>
 
       </div>
